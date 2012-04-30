@@ -33,7 +33,16 @@ Anyhow, to get it running...
 
 Prerequisite Installation: 
 ------------------------------------------------------------------------------
+You must install the kinect/data related and web content related prerequisites,
+however, since node.js is only being used to serve static web content at the
+moment, you could also use any other web server (apache, lighttpd, etc...) 
+instead if you wish. At some point, I intend to serve WebM and proxy the 
+websocket data from the Python code through Node.js, at which point that will
+no longer be true, but for now...
+
 # On Mac OS (Lion) with homebrew:
+
+### Kinect/Data Related
 
 brew install pkg-config
 brew install xz
@@ -54,3 +63,16 @@ wget https://github.com/OpenKinect/libfreenect/tarball/master
 tar xvzf master
 cd OpenKinect-libfreenect-bac62d0/wrappers/python
 sudo python setup.py install
+
+### Web Content/Node.js Related
+
+# download and install node
+http://nodejs.org/#download
+
+## install express and websocket for node
+# websocket
+npm install websocket
+
+## express
+npm install express
+ 

@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#
+# Peter Elespuru
+#
+
+#
+# start the node.js content server
+#
+node server/content_server.js 9797 vid/kinect.webm ws://127.0.0.1:9000 9898

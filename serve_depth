@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+#
+# Peter Elespuru
+#
+
+#
+# start the python data server for depth
+#
+server/websocket-kinect-depth.py server ws://127.0.0.1:9000

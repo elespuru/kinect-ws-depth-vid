@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+	<!--
+	Peter R. Elespuru
+	
+	Additional Credits:
+	Depth Idea/Derived/Forked from: https://github.com/jawj/websocket-kinect
+	See George MacKerron's original infos and work:
+	http://mackerron.com
+    http://casa.ucl.ac.uk
+	http://blog.mackerron.com/2012/02/03/depthcam-webkinect/
+	https://news.ycombinator.com/item?id=3561839
+	-->
+
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>bluepill</title>
+		<link rel="stylesheet" type="text/css" href="css/site.css" />
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mousewheel.js"></script>
+		<script type="text/javascript" src="js/transform.js"></script>
+		<script type="text/javascript" src="js/raf.js"></script>
+		<script type="text/javascript" src="js/Stats.min.js"></script>
+		<script type="text/javascript" src="js/Detector.js"></script>
+		<script type="text/javascript" src="js/RequestAnimationFrame.js"></script>
+		<script type="text/javascript" src="js/Three.js"></script>
+		<script type="text/javascript" src="js/lzma.min.js"></script>
+		<script type="text/javascript" src="js/dat.gui.min.js"></script>
+		<script type="text/javascript" src="js/Blue.js"></script>
+	</head>
+	
+	<body>
+		
+		<div id="noWebGL">
+			Your browser doesn't support WebGL and binary WebSockets (or it's disabled)<br/>
+			You need <a href="http://google.com/chrome">Chrome</a><br/>
+		</div>
+		
+		<canvas id="control" width="24" height="24"></canvas>
+		
+	</body>
+	
+</html>

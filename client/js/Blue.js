@@ -234,6 +234,7 @@ function init() {
 	for (y = 0; 0 <= h ? y < h : y > h; 0 <= h ? y++ : y--) {
 		for (x = 0; 0 <= w ? x < w : x > w; 0 <= w ? x++ : x--) {
 			xc = (x - (w / 2)) * useEvery * 2;
+			xc = -xc;
 			yc = ((h / 2) - y) * useEvery * 2;
 			particle = v(xc, yc, 0);
 			particle.usualY = yc;

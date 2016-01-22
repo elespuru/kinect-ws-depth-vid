@@ -10,7 +10,7 @@ float alpha(float val)
 {
 	float a;
 	
-	if ( val > -800.0 ) {
+	if ( val > -2000.0 ) {
 		a = smoothstep( -2000.0, 2000.0, val);
 	} else {
 		a = 0.0;
@@ -23,7 +23,7 @@ vec3 heat( float t )
 {
 	vec3 rgb = vec3(0.0, 1.0, 0.0);
 	float n = 100.0;   // nearest
-	float f = -1000.0;  // farthest
+	float f = -2000.0;  // farthest
 	float z = t;
 	rgb.r = smoothstep(n, f, t);
 	return rgb;
